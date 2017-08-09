@@ -8,6 +8,7 @@ if [ -n "${BASH_VERSION}" ]; then
     source ${DIR}/base.sh
     source ${DIR}/i_fa.sh
     source ${DIR}/i_oct.sh
+    PSORG=$PS1;
 
     : ${omg_ungit_prompt:=$PS1}
     : ${omg_second_line:=$PS1}
