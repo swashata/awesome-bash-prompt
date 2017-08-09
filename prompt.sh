@@ -8,7 +8,7 @@ if [ -n "${BASH_VERSION}" ]; then
     : ${omg_ungit_prompt:=$PS1}
     : ${omg_second_line:=$PS1}
 
-    : ${omg_is_a_git_repo_symbol:=''}
+    : ${omg_is_a_git_repo_symbol:='�'}
     : ${omg_has_untracked_files_symbol:=''}        #                ?    
     : ${omg_has_adds_symbol:=''}
     : ${omg_has_deletions_symbol:=''}
@@ -30,7 +30,7 @@ if [ -n "${BASH_VERSION}" ]; then
     : ${omg_default_color_on:='\[\033[1;37m\]'}
     : ${omg_default_color_off:='\[\033[0m\]'}
     : ${omg_last_symbol_color:='\e[0;31m\e[40m'}
-    
+
     PROMPT='$(build_prompt)'
     RPROMPT='%{$reset_color%}%T %{$fg_bold[white]%} %n@%m%{$reset_color%}'
 
