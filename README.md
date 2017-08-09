@@ -37,3 +37,19 @@ vagrant ssh
 ```
 
 Enjoy.
+
+# Disabling oh-my-git
+oh-my-git can be disabled on a per-repository basis. Just add a
+
+    [oh-my-git]
+    enabled = false
+
+in the `.git/config` file of a repo to revert to the original prompt for that particular repo. This could be handy when working with very huge repository, when the git commands invoked by oh-my-git can slow down the prompt.
+
+# Uninstall
+
+## Bash
+* Remove the line `source ~/.oh-my-git/prompt.sh` from the terminal boot script (`.profile` or `.bash_rc`)
+* Delete the oh-my-git repo with a `rm -fr ~/.oh-my-git`
+
+For More information, do check the original repo.
